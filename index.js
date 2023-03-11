@@ -66,6 +66,6 @@ app.put('/api/students/:id', (req, res) => {
     res.send(student);
 });
 
-// Puerto donde queremos escuchar (80)
+// Puerto donde queremos escuchar (puerto 8080)
 const port = process.env.port || 80;
 app.listen(port, () => console.log(`Escuchando en puerto ${port}...`));
